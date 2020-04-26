@@ -69,7 +69,7 @@ $functions = array('fopen');
 foreach ($functions as $function) {
     if (function_exists($function)) {
         $okField = "system_ok_$function";
-        $systemCheckOk[$function] = $function->$okField;
+        $systemCheckOk[$function] = $sprache->$okField;
     } else {
         $errorField = "error_system_$function";
         $systemCheckError[$function] = $sprache->$errorField;
